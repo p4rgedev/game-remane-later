@@ -1,0 +1,104 @@
+{
+  "author": "",
+  "category": "",
+  "extensionNamespace": "",
+  "fullName": "",
+  "gdevelopVersion": "",
+  "helpPath": "",
+  "iconUrl": "",
+  "name": "Kioske",
+  "previewIconUrl": "",
+  "shortDescription": "",
+  "version": "",
+  "description": "",
+  "tags": [],
+  "authorIds": [],
+  "dependencies": [],
+  "globalVariables": [],
+  "sceneVariables": [],
+  "eventsFunctions": [
+    {
+      "description": "forces fullscreen",
+      "fullName": "Force Kioske plus other things",
+      "functionType": "Action",
+      "name": "Function",
+      "sentence": "Forces kioske",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "CenterWindow"
+              },
+              "parameters": [
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "AdvancedWindow::Focus"
+              },
+              "parameters": [
+                "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AdvancedWindow::Maximize"
+              },
+              "parameters": [
+                "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AdvancedWindow::SetAlwaysOnTop"
+              },
+              "parameters": [
+                "yes",
+                "\"normal\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AdvancedWindow::SetClosable"
+              },
+              "parameters": [
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AdvancedWindow::SetKiosk"
+              },
+              "parameters": [
+                "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetFullScreen"
+              },
+              "parameters": [
+                "no",
+                "yes",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": [],
+      "objectGroups": []
+    }
+  ],
+  "eventsBasedBehaviors": [],
+  "eventsBasedObjects": []
+}
