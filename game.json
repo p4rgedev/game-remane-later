@@ -113,6 +113,22 @@
         "name": "BlurTile",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/Cursor.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Cursor",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Cursor2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Cursor2.png\"}",
+        "name": "Cursor2",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
