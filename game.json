@@ -90,7 +90,31 @@
     "currentPlatform": "GDevelop JS platform"
   },
   "resources": {
-    "resources": [],
+    "resources": [
+      {
+        "file": "VCR_OSD_MONO_1.001.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "VCR_OSD_MONO_1.001.ttf",
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewTiledSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "NewTiledSprite",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/BlurTile.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "BlurTile",
+        "smoothed": false,
+        "userAdded": false
+      }
+    ],
     "resourceFolders": []
   },
   "objects": [],
@@ -110,6 +134,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/kioske"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/fps"
     }
   ],
   "externalLayouts": []

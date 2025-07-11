@@ -9,7 +9,7 @@
   "title": "",
   "v": 0,
   "uiSettings": {
-    "grid": false,
+    "grid": true,
     "gridType": "rectangular",
     "gridWidth": 32,
     "gridHeight": 32,
@@ -17,11 +17,20 @@
     "gridOffsetY": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
-    "snap": false,
-    "zoomFactor": 0.5117784035210174,
+    "snap": true,
+    "zoomFactor": 0.4633111824514002,
     "windowMask": false
   },
-  "objectsGroups": [],
+  "objectsGroups": [
+    {
+      "name": "objects",
+      "objects": [
+        {
+          "name": "title"
+        }
+      ]
+    }
+  ],
   "variables": [],
   "instances": [
     {
@@ -30,12 +39,48 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "placeholder",
+      "name": "title",
+      "opacity": 128,
       "persistentUuid": "af627e5d-4927-429c-978f-a5628142d79b",
       "width": 0,
-      "x": 416,
-      "y": 353,
+      "x": -1430,
+      "y": 87,
       "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 736,
+      "keepRatio": true,
+      "layer": "",
+      "name": "effect",
+      "opacity": 128,
+      "persistentUuid": "b0d92827-0480-4d93-a91d-45d11897821a",
+      "width": 1312,
+      "x": -1400,
+      "y": 0,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 53,
+      "keepRatio": true,
+      "layer": "",
+      "name": "debug",
+      "persistentUuid": "ae1544d5-4b37-4f5e-b00f-a9e632b0e027",
+      "width": 372,
+      "x": 12,
+      "y": 38,
+      "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -46,17 +91,17 @@
       "assetStoreId": "",
       "bold": false,
       "italic": false,
-      "name": "placeholder",
+      "name": "title",
       "smoothed": true,
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "Text",
-      "font": "",
+      "string": "title-change-later",
+      "font": "VCR_OSD_MONO_1.001.ttf",
       "textAlignment": "center",
-      "characterSize": 200,
+      "characterSize": 100,
       "color": {
         "b": 255,
         "g": 255,
@@ -76,11 +121,86 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "Text",
-        "font": "",
+        "text": "title-change-later",
+        "font": "VCR_OSD_MONO_1.001.ttf",
         "textAlignment": "center",
         "verticalTextAlignment": "center",
-        "characterSize": 200,
+        "characterSize": 100,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "effect",
+      "texture": "BlurTile",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "CRT",
+          "name": "Effect",
+          "doubleParameters": {
+            "animationFrequency": 60,
+            "animationSpeed": 1,
+            "curvature": 5,
+            "lineContrast": 0.5,
+            "lineWidth": 1,
+            "noise": 0.3,
+            "noiseSize": 1,
+            "padding": 0,
+            "vignetting": 0.3,
+            "vignettingAlpha": 1,
+            "vignettingBlur": 0.3
+          },
+          "stringParameters": {},
+          "booleanParameters": {
+            "verticalLine": true
+          }
+        }
+      ],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "debug",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "the penis snipper guy",
+      "font": "VCR_OSD_MONO_1.001.ttf",
+      "textAlignment": "center",
+      "characterSize": 25,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "the penis snipper guy",
+        "font": "VCR_OSD_MONO_1.001.ttf",
+        "textAlignment": "center",
+        "verticalTextAlignment": "center",
+        "characterSize": 25,
         "color": "255;255;255"
       }
     }
@@ -89,7 +209,16 @@
     "folderName": "__ROOT",
     "children": [
       {
-        "objectName": "placeholder"
+        "objectName": "effect"
+      },
+      {
+        "objectName": "title"
+      },
+      {
+        "folderName": "Buttons"
+      },
+      {
+        "objectName": "debug"
       }
     ]
   },
@@ -123,11 +252,13 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "OnStart",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -183,7 +314,85 @@
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
-              "actions": []
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetCenterX"
+                  },
+                  "parameters": [
+                    "title",
+                    "=",
+                    "ScreenWidth()/2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCenterX"
+                  },
+                  "parameters": [
+                    "effect",
+                    "=",
+                    "ScreenWidth()/2"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Z-Order"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "effect",
+                    "=",
+                    "objects.ZOrder()"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Debug",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "debug",
+                "Text",
+                "=",
+                "\"DEBUG\" + \"\n------------------\" + \"\nFrameRate: \" + ToString(round(FPS::FPS()))"
+              ]
             }
           ]
         }
@@ -245,6 +454,10 @@
     {
       "name": "Opacity",
       "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "Resizable",
+      "type": "ResizableCapability::ResizableBehavior"
     },
     {
       "name": "Scale",
