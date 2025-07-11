@@ -30,10 +30,12 @@
           "actions": [
             {
               "type": {
-                "value": "CenterWindow"
+                "value": "SetFullScreen"
               },
               "parameters": [
-                "no"
+                "no",
+                "yes",
+                ""
               ]
             },
             {
@@ -47,47 +49,9 @@
             },
             {
               "type": {
-                "value": "AdvancedWindow::Maximize"
-              },
-              "parameters": [
-                "yes",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "AdvancedWindow::SetAlwaysOnTop"
-              },
-              "parameters": [
-                "yes",
-                "\"normal\"",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "AdvancedWindow::SetClosable"
-              },
-              "parameters": [
-                "no",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "AdvancedWindow::SetKiosk"
               },
               "parameters": [
-                "yes",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetFullScreen"
-              },
-              "parameters": [
-                "no",
                 "yes",
                 ""
               ]
