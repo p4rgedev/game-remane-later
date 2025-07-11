@@ -99,26 +99,10 @@
         "userAdded": false
       },
       {
-        "file": "assets/NewTiledSprite.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "NewTiledSprite",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/BlurTile.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
         "name": "BlurTile",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Cursor.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Cursor",
         "smoothed": false,
         "userAdded": false
       },
